@@ -1,0 +1,13 @@
+.inputForm {
+	margin-top: 300px;
+	font-family: 'Courier New', Courier, monospace;
+	border: solid 1px #f9f9f9;
+	border-radius: 8px;
+	height: 24px;
+	width: 250px;
+	margin-left: 150px;
+	padding: 5px 40px;
+	&:focus {
+		border: unset;
+	}
+}

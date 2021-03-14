@@ -1,0 +1,67 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-main {
+  position: fixed;
+  background: #f1eded;
+  width: 50%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.display-block {
+  display: block;
+}
+.display-none {
+  display: none;
+}
+.parent {
+  padding: 24px;
+}
+.closeBtn {
+  padding: 10px 0px;
+  button {
+    border: unset;
+    background-color: #92fe9d99;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+.modalContent {
+  border-bottom: solid 1px grey;
+  padding: 24px 0px;
+  position: relative;
+  img {
+    border-radius: 50%;
+    height: 60px;
+    width: auto;
+    position: absolute;
+    right: 0;
+  }
+}
+.title {
+  padding-bottom: 20px;
+  border-bottom: solid 1px grey;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.personalDetails {
+  letter-spacing: 0.55px;
+  line-height: 30px;
+}
+
+$breakpoint-tablet: 992px;
+@media (max-width: $breakpoint-tablet) {
+  .modal-main {
+    width: 90%;
+  }
+}
